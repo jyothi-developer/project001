@@ -1,0 +1,9 @@
+<div *ngIf="isLoggedIn; else isLoggedOut">
+  Hello Admin
+</div>
+
+<ng-template #isLoggedOut>
+  Hello World
+</ng-template>
+
+<router-outlet></router-outlet>
